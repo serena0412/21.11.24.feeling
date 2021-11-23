@@ -14,22 +14,39 @@
 		section{width: 1400px; margin: auto; text-align: center;}
 		h1{position: absolute; top: 0; bottom: 0; left: 0; right: 0; height: 40px; margin: auto; font-weight:normal; font-size: 2.5em;}
 
+		#img1{background-image: url('2.gif');}
+ 	* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+		 canvas {
+      display: block;
+    }
 	</style>
 
 </head>
 <body>
 <header>
-<h1>장애물을 피해 무사히 침대에 도착해주세요!</h1>
+<h1>장애물을 피해 무사히 침대에 도착해보세요!</h1>
 </header>
 
 	<img src='1.png' class="item" style=" width: 100%; top:450px;">
 <section>
 
-	<div class="flex">
-	<h2 style="color:#f4cd20">침대까지 남은 거리:NNkm</h2>
+	<div>
+	<!-- <h2 style="color:#f4cd20">침대까지 남은 거리:NNkm</h2> -->
 
-			<img src='2.png' class="item" style=" width: 25%; top:160px; left:130px">
-			<img src='3.png' class="item" style=" width: 10%; right:140px; top:250px;">
+
+
+
+
+	<canvas class='item'id="game" style="width: 100%; height: auto ; bottom: 200px; left:0; right:0; margin:auto"></canvas>
+
+
+			<!-- <img src='2.png' class="item" style=" width: 25%; top:160px; left:130px"> -->
+			<!-- <img src='3.png' class="item" style=" width: 10%; right:140px; top:250px;"> -->
 
 			<a href="https://serena0412.github.io/21.11.24.main/" target_self>
 			<img src='back.png' class="item" style=" width: 15%; left: 0px;bottom:40px;z-index: 0;">
@@ -37,6 +54,13 @@
 	</div>
 
 </section>
+
+
+<script type="text/javascript">
+	
+	// window.onkeydown = (e) => console.log(e);
+</script>
+ <script src="main.js"></script>	
 
 </body>
 </html>
